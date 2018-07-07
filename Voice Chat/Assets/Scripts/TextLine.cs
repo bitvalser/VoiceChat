@@ -16,8 +16,10 @@ public class TextLine : MonoBehaviour {
 
     void JoinLobby()
     {
-        if(nickname.Length > 0)
-            SceneManager.LoadScene("Hub");
+        if (nickname.Length > 0)
+        {  
+            SceneManager.LoadScene("Hub"); 
+        }
     }
 
     public void ChangeText()

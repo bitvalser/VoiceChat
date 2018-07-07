@@ -250,9 +250,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 720cff9ce5f8a41488f77f635b56917f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Text: {fileID: 1213153762}
-  Timer: 3
-  Camera: {fileID: 2069872845}
 --- !u!114 &1213153762
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,8 +404,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1979019746}
   - component: {fileID: 1979019747}
-  - component: {fileID: 1979019749}
   - component: {fileID: 1979019750}
+  - component: {fileID: 1979019748}
   m_Layer: 0
   m_Name: PUN
   m_TagString: Untagged
@@ -438,14 +435,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1979019745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6eba5753a72c3244c851d7450564c8bd, type: 3}
+  m_Script: {fileID: 11500000, guid: be2f0470edd0dc549a064bf45a929158, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnPosition: {fileID: 366859202}
-  PositionOffset: 5
-  PrefabsToInstantiate:
-  - {fileID: 1050673408022874, guid: 2eebcc4610116ee4584835b115b553e3, type: 2}
---- !u!114 &1979019749
+--- !u!114 &1979019748
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -453,11 +446,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1979019745}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a12b1ae2d50d2749bd1c8203cbb423c, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c83e06d07b8f654981913996327bdf4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JoinClip: {fileID: 8300000, guid: dd2973535af1c6a4a9c18e0973520b42, type: 3}
-  LeaveClip: {fileID: 8300000, guid: f60c28e299c51fd47b838b76f2f9ec17, type: 3}
+  AutoConnect: 1
+  AutoDisconnect: 1
+  AutoTransmit: 0
+  SamplingRate: 24000
+  FrameDuration: 20000
+  Bitrate: 30000
+  VoiceDetection: 0
+  VoiceDetectionThreshold: 0.01
+  PlayDelayMs: 200
+  MicrophoneType: 0
+  DebugLostPercent: 0
+  DebugInfo: 0
 --- !u!114 &1979019750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -566,7 +569,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 2144206268}
-  - component: {fileID: 2144206270}
   - component: {fileID: 2144206269}
   m_Layer: 0
   m_Name: Voice
@@ -599,26 +601,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f584e6be54291f48b3f3633776c8e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &2144206270
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2144206267}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c83e06d07b8f654981913996327bdf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AutoConnect: 1
-  AutoDisconnect: 1
-  AutoTransmit: 0
-  SamplingRate: 24000
-  FrameDuration: 20000
-  Bitrate: 30000
-  VoiceDetection: 1
-  VoiceDetectionThreshold: 0.01
-  PlayDelayMs: 200
-  MicrophoneType: 0
-  DebugLostPercent: 0
-  DebugInfo: 0

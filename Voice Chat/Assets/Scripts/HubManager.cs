@@ -23,8 +23,9 @@ public class HubManager : MonoBehaviour {
     }
 
     private void Start()
-    {
+    {       
         PhotonNetwork.ConnectUsingSettings("1.0");
+        PhotonNetwork.JoinLobby();
         PhotonNetwork.playerName = GameObject.FindWithTag("Nick").GetComponent<TextLine>().getNick();
         refresh.onClick.AddListener(ResfreshRooms);
         create.onClick.AddListener(CreateRoom);
