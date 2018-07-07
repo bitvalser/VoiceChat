@@ -1100,6 +1100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6879a5b55dcede4987fa9df73461410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  create: {fileID: 0}
+  refresh: {fileID: 1294637341}
+  room_name: {fileID: 98909611}
 --- !u!1 &1623892492
 GameObject:
   m_ObjectHideFlags: 0
