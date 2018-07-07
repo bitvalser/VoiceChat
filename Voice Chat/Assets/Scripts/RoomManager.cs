@@ -39,9 +39,11 @@ public class RoomManager : Photon.MonoBehaviour {
     }
 	public void MuteALL(){
 		if (!muteALL) {
+			muteALL = true;
 			AudioListener.volume = 0.0f;
 		} 
 		else {
+			muteALL = false;
 			AudioListener.volume = 1;
 		}
 	
