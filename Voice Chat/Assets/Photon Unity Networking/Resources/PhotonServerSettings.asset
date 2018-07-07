@@ -12,8 +12,13 @@ MonoBehaviour:
   m_Name: PhotonServerSettings
   m_EditorClassIdentifier: 
   AppID: 1f5963e2-3bbe-4985-9b63-e52b6c347174
+<<<<<<< HEAD
   VoiceAppID: 
   ChatAppID: 
+=======
+  VoiceAppID: 929312ef-e130-431d-a606-45da45c259f3
+  ChatAppID: 287739b1-e107-4d26-8d6a-8dd3385bdc26
+>>>>>>> fa1fc8f7ef778583906b33f591da669eb7ef3ce2
   HostType: 1
   PreferredRegion: 0
   EnabledRegions: -1
@@ -21,8 +26,8 @@ MonoBehaviour:
   ServerAddress: 
   ServerPort: 5055
   VoiceServerPort: 5055
-  JoinLobby: 0
-  EnableLobbyStatistics: 0
+  JoinLobby: 1
+  EnableLobbyStatistics: 1
   PunLogging: 0
   NetworkLogging: 1
   RunInBackground: 1
