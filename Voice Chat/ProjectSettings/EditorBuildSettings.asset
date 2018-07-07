@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/PUNVoice/DemoVoice/DemoVoice-PushToTalk-Scene.unity
+    path: 
     guid: 6a4c81dac0957ce4bb7ae64fc26dc5be
-  - enabled: 1
-    path: Assets/vec.unity
+  - enabled: 0
+    path: 
     guid: df703eb0c18fa994cbdf83c70bcaf2cd
+  - enabled: 1
+    path: Assets/Scenes/test.unity
+    guid: 0189ee7b0cdc3324b98102a6f3ed7a93
