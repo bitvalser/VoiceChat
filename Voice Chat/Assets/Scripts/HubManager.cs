@@ -14,12 +14,15 @@ public class HubManager : MonoBehaviour {
     public GameObject roomPrefab;
     public GameObject roomsArea;
 
+    public Text output;
+
     private static string roomNameJoin;
 
     // Use this for initialization
     private void Awake()
     {
         DontDestroyOnLoad(gameObject.transform);
+        DontDestroyOnLoad(output);
     }
 
     private void Start()
@@ -27,14 +30,15 @@ public class HubManager : MonoBehaviour {
         PhotonNetwork.ConnectUsingSettings("1.0");
         PhotonNetwork.JoinLobby();
         PhotonNetwork.playerName = GameObject.FindWithTag("Nick").GetComponent<TextLine>().getNick();
+        output.text = PhotonNetwork.playerName;
         refresh.onClick.AddListener(ResfreshRooms);
         create.onClick.AddListener(CreateRoom);
         rooms = new List<GameObject>();
     }
 
-    private void OnGUI()
+    void OnGUI()
     {
-        GUILayout.Label(PhotonNetwork.playerName +"\n"+PhotonNetwork.connectionStateDetailed.ToString());
+        GUILayout.Label("\n" + PhotonNetwork.connectionStateDetailed.ToString());
     }
 
     void CreateRoom()
