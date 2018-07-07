@@ -87,7 +87,7 @@ public class HubManager : MonoBehaviour {
 
     void OnJoinedRoom()
     {
-        SceneManager.LoadScene("test_room");
+        SceneManager.LoadScene("test");
     }
 
     void OnCreatedRoom()
