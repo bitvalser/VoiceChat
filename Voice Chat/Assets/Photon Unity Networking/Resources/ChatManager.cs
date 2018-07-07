@@ -40,8 +40,8 @@ public class ChatManager : MonoBehaviour, IChatClientListener {
 		}
 		else
 		{
-			GUI.TextArea(new Rect(10, 10, 200, 200), _chatText);
-			_input = GUI.TextField(new Rect(10, 215, 100, 20), _input);
+			GUI.TextArea(new Rect(222, 0, 650, 286), _chatText);
+			_input = GUI.TextField(new Rect(10, 215, 20, 20), _input);
 			if (GUI.Button(new Rect(115, 215, 80, 20), "Send"))
 			{
 				if (!string.IsNullOrEmpty(_input) && _input.Length > 0)
