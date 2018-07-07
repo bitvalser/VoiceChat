@@ -89,7 +89,7 @@ public class HubManager : MonoBehaviour {
     void OnJoinedRoom()
     {
         PhotonNetwork.Instantiate("testPrefab", Vector3.zero, Quaternion.identity, 0);
-        SceneManager.LoadScene("test");       
+         SceneManager.LoadScene("test");       
     }
 
     void OnCreatedRoom()
