@@ -11,15 +11,16 @@ public class RoomManager : Photon.MonoBehaviour {
         PhotonNetwork.ConnectUsingSettings("1.0");
     }
 
+    private void OnGUI()
+    {
+        
+    }
 
     void OnJoinedLobby()
     {
-        //PhotonNetwork.CreateRoom("va", new RoomOptions(), TypedLobby.Default);
-        Debug.Log("Lobbi");
     }
 
     void OnJoinedRoom()
     {
-        Debug.Log("Connect");
     }
 }

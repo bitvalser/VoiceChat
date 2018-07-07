@@ -34,7 +34,7 @@ public class HubManager : MonoBehaviour {
 
     private void OnGUI()
     {
-        GUILayout.Label(PhotonNetwork.connectionStateDetailed.ToString());
+        GUILayout.Label(PhotonNetwork.playerName +"\n"+PhotonNetwork.connectionStateDetailed.ToString());
     }
 
     void CreateRoom()
