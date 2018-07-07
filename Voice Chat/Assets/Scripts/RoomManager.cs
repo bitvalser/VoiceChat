@@ -9,20 +9,8 @@ public class RoomManager : Photon.MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         PhotonNetwork.ConnectUsingSettings("1.0");
-        Debug.Log("Connected");
-        players = 1;
-        PhotonNetwork.Instantiate("testPrefab", Vector3.zero, Quaternion.identity, 0);
     }
 
-    private void Update()
-    {
-        if(PhotonNetwork.countOfPlayersInRooms > players)
-        {
-            players++;
-            Debug.Log("p++");
-            PhotonNetwork.Instantiate("testPrefab", Vector3.zero, Quaternion.identity, 0);
-        }
-    }
 
     void OnJoinedLobby()
     {

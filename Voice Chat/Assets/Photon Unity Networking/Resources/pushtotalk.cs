@@ -8,8 +8,12 @@ namespace ExitGames.Demos.DemoPunVoice
 
 	public class pushtotalk : Photon.MonoBehaviour {
 		private PhotonVoiceRecorder rec;
-		// Use this for initialization
-		void Start () {
+        private void Awake()
+        {
+            DontDestroyOnLoad(gameObject.transform);
+        }
+        // Use this for initialization
+        void Start () {
 			rec = GetComponent<PhotonVoiceRecorder> ();
 			rec.Transmit = false;
 		}
