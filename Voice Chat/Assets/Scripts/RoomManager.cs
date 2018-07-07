@@ -30,11 +30,13 @@ public class RoomManager : Photon.MonoBehaviour {
 
     private void OnGUI()
     {
-        GUILayout.Label("\n" + PhotonNetwork.connectionStateDetailed.ToString() + text);
+        GUILayout.Label("\n\n\nStatus:\n" + PhotonNetwork.connectionStateDetailed.ToString() + text);
     }
 
     public void BackToLobby()
     {
+        PhotonNetwork.LeaveRoom();
+        PhotonNetwork.JoinLobby();
         SceneManager.LoadScene("Hub");
     }
 	public void MuteALL(){
