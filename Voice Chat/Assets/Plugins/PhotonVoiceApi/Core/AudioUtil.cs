@@ -327,6 +327,7 @@ namespace ExitGames.Client.Photon.Voice
             public bool Detected { get { return false; } }
             public int ActivityDelayMs { get { return 0; } set { } }
             public DateTime DetectedTime { get; private set; }
+#pragma warning disable 0067
             public event Action OnDetected;
         }
         /// <summary>
