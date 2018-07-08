@@ -8,6 +8,8 @@ TagManager:
   - Nick
   - Hub
   - Output
+  - voice
+  - PUN
   layers:
   - Default
   - TransparentFX

@@ -588,9 +588,10 @@ GameObject:
   - component: {fileID: 1446734123}
   - component: {fileID: 1446734122}
   - component: {fileID: 1446734125}
+  - component: {fileID: 1446734126}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: voice
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -703,8 +704,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1979019750}
-          m_MethodName: OnPointerDown
+        - m_Target: {fileID: 1446734126}
+          m_MethodName: onPointerDownRaceButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -720,8 +721,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 1979019750}
-          m_MethodName: onPointerUp
+        - m_Target: {fileID: 1446734126}
+          m_MethodName: onPointerUpRaceButton
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -734,6 +735,24 @@ MonoBehaviour:
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   delegates: []
+--- !u!114 &1446734126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1446734120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 421526a02e3ab9f44abf323db7a48156, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isRacePressed: 0
+  isbrakePressed: 0
+  btnVoice: {fileID: 1446734122}
+  startVoice: {fileID: 1166596450627078, guid: 7032f4a7fc4b7f1478a8b172cdf2f3ef, type: 2}
+  endVoice: {fileID: 1184174225271104, guid: 70a11898433815848af23abe0299a8ee, type: 2}
+  NoVoice: {fileID: 21300000, guid: f6f3c70868ea57d46ad97aa8e9d46553, type: 3}
+  Voice: {fileID: 21300000, guid: fd55d3260d5efce4ab369cfede89a811, type: 3}
 --- !u!1 &1685564388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1024,7 +1043,7 @@ GameObject:
   - component: {fileID: 1979019749}
   m_Layer: 0
   m_Name: PUN
-  m_TagString: Untagged
+  m_TagString: PUN
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1095,6 +1114,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isRacePressed: 0
   isbrakePressed: 0
+  btnVoice: {fileID: 0}
+  startVoice: {fileID: 0}
+  endVoice: {fileID: 0}
+  NoVoice: {fileID: 0}
+  Voice: {fileID: 0}
 --- !u!114 &1979019750
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1106,9 +1130,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f584e6be54291f48b3f3633776c8e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NoVoice: {fileID: 21300000, guid: f6f3c70868ea57d46ad97aa8e9d46553, type: 3}
-  Voice: {fileID: 21300000, guid: fd55d3260d5efce4ab369cfede89a811, type: 3}
-  btnVoice: {fileID: 1446734122}
 --- !u!1 &2069872845
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1259,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f584e6be54291f48b3f3633776c8e0e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NoVoice: {fileID: 0}
-  Voice: {fileID: 0}
-  btnVoice: {fileID: 0}
