@@ -9,7 +9,9 @@ public class RoomManager : Photon.MonoBehaviour {
     private string text;
     public Button back;
 	public Button mute;
-    // Use this for initialization
+    public Sprite speakerMute;
+    public Sprite speakerUnmute;
+
     void Start () {
         PhotonNetwork.ConnectUsingSettings("1.0");
         output.text = PhotonNetwork.playerName;
@@ -42,11 +44,13 @@ public class RoomManager : Photon.MonoBehaviour {
 	public void MuteALL(){
 		if (!muteALL) {
 			muteALL = true;
-			AudioListener.volume = 0.0f;
+            mute.image.sprite = speakerMute;
+            AudioListener.volume = 0.0f;
 		} 
 		else {
 			muteALL = false;
-			AudioListener.volume = 1;
+            mute.image.sprite = speakerUnmute;
+            AudioListener.volume = 1;
 		}
 	
 	}
